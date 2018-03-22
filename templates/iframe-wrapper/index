@@ -5,17 +5,16 @@
  <meta charset="UTF-8">
  <title>Boiler Codes</title>
  <meta name="description" content="DESCRIPTION">
- <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="PATH">
+
     <!--[if lt IE 9]>
       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 
 <body>
-  <header>
-    <p>A free template from Boiler Codes - Get more here</p>
-  </header>
-  <iframe src="templates/001/index.html"></iframe>
+  <header>Hello</header>
+  <iframe src="https://www.atle.co"></iframe>
  </body>
 
 </html>
