@@ -135,5 +135,19 @@ ul a:hover {
 
 /* The responsive bits, called media queries */
 @media screen and (max-width: 760px) { /* Screens 760px or less */
+  .sidebar {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 1;
+    margin-top: 60px;
+    padding: 20px 10px 10px 20px;
+  }
+  .main {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
+  }
 
 }
