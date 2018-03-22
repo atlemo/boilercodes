@@ -1,0 +1,356 @@
+// Variables
+
+@primary: #2A2DD2;
+@secondary: #00EA9C;
+@fg: darken(@primary, 40%);
+@fg-light: lighten(@primary, 48%);
+@bg: darken(@primary, 40%);
+
+@font-size-small: 0.7em;
+@font-size: 1.1em;
+@font-size-medium: 1.6em;
+@font-size-large: 2.5em;
+@font-size-xl: 5.5em;
+
+@box-shadow-image: 0 20px 22px 0 rgba(0,0,0,0.1);
+
+body {
+  font-size: 85%;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: @fg;
+}
+
+// Typography
+
+h1 {
+  font-family: "abril-fatface", serif;
+  font-size: @font-size-xl;
+  font-weight: 100;
+  color: @secondary;
+  width: 100%;
+  max-width: 840px;
+  padding-top: 10px;
+}
+h2 {
+  font-size: @font-size;
+  font-weight: 600;
+  margin: 22px 0 0 0;
+  color: @fg-light;
+  flex-basis: 100%;
+}
+h3 {
+  font-family: sans-serif;
+  color: @primary;
+  font-size: @font-size-medium;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+h4 {
+  font-family: "abril-fatface", serif;
+  font-size: @font-size-large;
+  font-weight: 100;
+  color: @secondary;
+  margin: 0 22px 0 0;
+}
+
+p {
+  line-height: 23px;
+  &.intro {
+    color: @primary;
+  }
+  &.white {
+    color: white;
+  }
+}
+
+a {
+  color: @primary;
+  &.green {
+    color: @secondary;
+  }
+}
+
+
+// Layout
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.left {
+  display: flex;
+  order: 1;
+  flex-basis: 20%;
+  max-width: 250px;
+  min-width: 200px;
+  padding: 74px 52px 32px 32px;
+  flex-direction: column;
+}
+.madeby {
+  margin-top: auto;
+}
+
+main {
+  display: flex;
+  order: 2;
+  flex-basis: 80%;
+  padding: 0 70px 70px 70px;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  background: url('../assets/ruler-bg.svg') left top repeat-y;
+  background-color: @primary;
+}
+
+nav {
+  width: 100%;
+  ul {
+    background-color: darken(@primary, 3%);
+    list-style: none;
+    margin: 0 -70px;
+    padding-right: 10px;
+    padding-left: 80px;
+    display: flex;
+    justify-content: flex-start;
+    a {
+      display: block;
+      color: fade(@fg-light, 80%);
+      text-decoration: none;
+      padding: 12px;
+      margin-right: 1px;
+      &:hover, &.active {
+        background-color: darken(@primary, 8%);
+      }
+      &.active {
+        color: @secondary;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Layout Preview Box
+
+article {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-items: center;
+  margin: 20px 0;
+  &:nth-of-type(even) { // Magic trick to flip the order
+    flex-direction: row-reverse;
+  }
+  &.template-preview {
+    padding-bottom: 30px;
+    max-width: 840px;
+    div {
+      display: flex;
+      flex-basis: 55%;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      p {
+        color: @fg-light;
+        flex-basis: 100%;
+        &.tags {
+          display: flex;
+          color: fade(@fg-light, 60%);
+          font-size: @font-size-small;
+          margin-right: 6px;
+          padding: 0 10px;
+          background: fade(@bg, 30%);
+          border-radius: 10px;
+          height: 20px;
+          line-height: 18px;
+          text-align: center;
+        }
+      }
+      &.flex-start-img {
+        // Used to flip the preview image position
+        justify-content: flex-start !important;
+      }
+      &:last-of-type {
+        flex-basis: 45%;
+        justify-content: flex-end;
+        margin-top: 0;
+      }
+      .tags-container {
+        display: flex;
+        flex: 1 100%;
+        justify-content: flex-start;
+      }
+    }
+    .theme-preview-image {
+      display: inline-flex;
+      padding: 20px;
+      max-width: 196px;
+      background: #FFFFFF;
+      border-radius: 4px;
+      box-shadow: @box-shadow-image;
+      transition: 0.2s;
+      &:hover {
+        transform: translate(0, -2px);
+      }
+      img {
+        flex-basis: 188px;
+        margin: 0;
+        padding: 0;
+        height: auto;
+      }
+      svg path {
+        fill: @secondary;
+        &.opacity-05 {
+          opacity: 0.5;
+        }
+        &.opacity-03 {
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+}
+
+svg {
+  &.arrow {
+    fill: fade(@bg, 30%);
+    height: 13px;
+    padding-top: 8px;
+    &.flipped {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+// Layout Preview Box END
+
+
+
+// UI elements and such
+
+.downloadbutton {
+  display: inline-block;
+  background: #fff;
+  margin-top: 12px;
+  margin-right: 12px;
+  padding: 10px 20px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  border: none;
+  font-size: @font-size;
+  font-weight: 600;
+  text-align: center;
+  &:hover {
+    transform: translate(0, -2px);
+    box-shadow: 1px 5px 12px rgba(0,0,0,0.4);
+  }
+}
+
+.ripple {
+  position: absolute;
+  background: rgba(64, 88, 255, 0.2);
+  border-radius: 100%;
+  transform: scale(0.2);
+  opacity: 0;
+  pointer-events: none;
+  animation: ripple .7s ease-out;
+}
+
+@keyframes ripple {
+  from {
+    opacity:1;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+// Funky scrollbars
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  overflow: visible;
+}
+::-webkit-scrollbar-thumb {
+  background: @secondary;
+}
+::-webkit-scrollbar, ::-webkit-scrollbar-track {
+  background: @primary;
+}
+
+
+// Selection
+::selection {
+  background-color: @secondary;
+  color: @primary;
+}
+
+// Media Queries (makin' it responsive)
+
+@media screen and (min-width: 1440px) {
+  main {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 1140px) { // 1100 or less
+  main {
+    flex-basis: 100%;
+    padding: 0 32px 70px;
+    order: 1;
+  }
+  .container {
+    flex-direction: column;
+    h1 {
+      max-width: 860px;
+    }
+    .template-preview {
+      max-width: 860px;
+    }
+  }
+  .left {
+    flex-basis: 100%;
+    max-width: 85%;
+    padding: 32px;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 760px) { // 770 or less
+  body {
+    font-size: 100%;
+  }
+  .container {
+    flex-direction: column;
+    h1 {
+      font-size: @font-size-medium + 1em;
+    }
+    article {
+      flex-direction: column;
+      border-bottom: 2px solid fade(@bg, 30%);
+        &.template-preview {
+          div {
+            width: 100%;
+            svg.arrow {
+              display: none;
+            }
+            &:last-of-type {
+              padding-top: 20px;
+              justify-content: flex-start;
+            }
+          }
+        }
+      }
+    }
+  }
