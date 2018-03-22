@@ -1,21 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- Feel free to look around. This is how I do things, but that does not mean
+it's the best possible way – look and learn, then improve! -->
+
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <title>Boiler Codes</title>
- <meta name="description" content="DESCRIPTION">
- <link rel="stylesheet" href="style.css">
-    <!--[if lt IE 9]>
-      <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <meta charset="utf-8">
+  <meta name="description" content="Boiler code">
+  <meta name="author" content="boiler.codes / Atle Mo">
+  <title>Free website templates (HTML and CSS) | Boiler Codes</title>
+  <link rel="stylesheet" href="build/style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="icons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="icons/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#2A2DD2" />
+  <meta name="theme-color" content="#2A2DD2">
+  <meta name="msapplication-TileImage" content="icons/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="icons/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="icons/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="icons/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="icons/mstile-310x310.png" />
+
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+
+<!-- Getting that glorious Abril Fatface font -->
+  <script src="https://use.typekit.net/gen6bkb.js"></script>
+  <script>
+    try {
+      Typekit.load({
+        async: true
+      });
+    } catch (e) {}
+  </script>
 </head>
 
 <body>
-  <header>
-    <p>A free template from Boiler Codes - Get more here</p>
-  </header>
-  <iframe src="templates/001/index.html"></iframe>
- </body>
+  <div class="container">
+    <div class="left">
+      <div class="logo">
+        <svg width="100" height="102"
+           viewBox="0 0 100 102" xmlns="http://www.w3.org/2000/svg">
+           <path fill="#1571F5" d="M0 72V57l50-30 50 30v15l-50 30"/>
+           <path fill="#5154FF" d="M50 27l50 30-50 30L0 57"/>
+           <path fill="#4649F6" d="M0 57l50 30v15L0 72"/>
+           <path fill="#2A2DD2" d="M100 57L50 87v15l50-30"/>
+           <path fill="#F1F7FF" d="M0 44V30L50 0l50 30v14L50 74"/>
+           <path fill="#AAA6FF" d="M0 30l50 30v15L0 45"/>
+           <path fill="#7976FF" d="M100 30L50 60v15l50-30"/>
+           <path fill="#F2F7FF" d="M50 1l50 29-50 30L0 30"/>
+           <path fill="#F3F2FF" d="M50 0l50 30-50 30L0 30"/>
+        </svg>
+      </div>
+
+      <h3>What's this?</h3>
+      <p class="intro">A designer learning to code using 
+        <a href="https://www.w3.org/TR/css-flexbox-1/">Flex</a> and
+        <a href="https://www.w3.org/TR/css-grid-1/">Grid</a> ended up as this,
+        Boiler Codes.</p>
+      <p>Not a new framework, rather a small selection of starting point templates
+        and experiments for modern browsers. Plain HTML and CSS.
+        Meant to give you a head start for your next web project, or to pick
+      apart and see how it's made. See something that could be done better? -
+      <a href="https://github.com/atlemo/boilercodes">Please, contribute →</a></p>
+      <p>No fuzz, no prefix. All responsive, obviously. Updated infrequently.</p>
+
+      <a href="#">Free to use, forever.</a>
+      <div class="madeby"><p>From Norway with love,
+        <br>By <a href="https://twitter.com/atlemo/">Atle Mo</a></p>
+      </div>
+    </div>
+
+    <main>
+      <h1>Go ahead, pick a free template.</h1>
+      <article class="template-preview">
+        <div>
+          <h4>01</h4>
+          <svg class="arrow" width="246" height="13" viewBox="56 47 246 13" xmlns="http://www.w3.org/2000/svg">
+            <path d="M56 52h240v2H56v-2zm240-5l6 6-6 6V47z"/>
+          </svg>
+          <h2>The Startup</h2>
+          <p>Every webpage in recent time aka «The Startup» - big header image, slogan on top and call to action. Deal with it.</p>
+          <a class="downloadbutton" href="#">Download</a>
+          <a class="downloadbutton" href="../github/boilercodes/templates/001/index.html">Preview</a>
+        </div>
+        <div>
+          <div class="theme-preview-image">
+            <a href="../github/boilercodes/templates/001/index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="196" height="339" viewBox="0 0 196 339">
+                <path d="M192 4v331H4V4h188m4-4H0v339h196V0z"/>
+                <path class="opacity-05" d="M24 312h70v3H24v-3zm78 0h70v3h-70v-3zm-78 5h70v3H24v-3zm78 0h70v3h-70v-3z"/>
+                <path class="opacity-03" d="M4 246h188v48H4z"/>
+                <path class="opacity-03" d="M4 4h188v100H4z"/>
+                <path d="M38 42h120v6H38zM38 32h120v6H38z"/>
+                <path d="M57 271h40v12H57z"/>
+                <path d="M99 271v12h40v-12H99zm38 10h-36v-8h36v8z"/>
+                <path d="M57 67h40v12H57z"/>
+                <path d="M137 69v8h-36v-8h36m2-2H99v12h40V67z"/>
+                <path d="M36 259h124v6H36z"/>
+                <path class="opacity-03" d="M104 128h66v32h-66z"/>
+                <path d="M102 126v36h70v-36h-70zm68 34h-66v-32h66v32zM24 146h70v6H24zM24 156h50v6H24zM24 136h70v6H24zM24 126h70v6H24z"/>
+                <path class="opacity-03" d="M26 184h66v32H26z"/>
+                <path d="M24 182v36h70v-36H24zm68 34H26v-32h66v32z"/>
+                <path d="M102 202h70v6h-70zM102 212h50v6h-50zM102 192h70v6h-70zM102 182h70v6h-70z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="template-preview">
+        <div>
+          <h4>02</h4>
+          <svg class="arrow flipped" width="246" height="13" viewBox="56 47 246 13" xmlns="http://www.w3.org/2000/svg">
+            <path d="M56 52h240v2H56v-2zm240-5l6 6-6 6V47z"/>
+          </svg>
+          <h2>One Page Profile</h2>
+          <p>Large image on the left, blog or news feed on the right.</p>
+          <a class="downloadbutton" href="#">Download</a>
+          <a class="downloadbutton" href="../github/boilercodes/templates/002/index.html">Preview</a>
+        </div>
+        <div class="flex-start-img">
+          <div class="theme-preview-image">
+            <a href="../github/boilercodes/templates/002/index.html">
+              <svg class="template-preview-svg" xmlns="http://www.w3.org/2000/svg" width="196" height="258" viewBox="0 0 196 258">
+                <path class="st0a" d="M192 4v250H4V4h188m4-4H0v258h196V0z"/>
+                <path class="st0b" d="M112 77h70v6h-70zM112 87h50v6h-50zM112 67h70v6h-70zM112 57h70v6h-70zM112 137h50v6h-50zM112 127h70v6h-70zM112 107h70v6h-70zM112 117h70v6h-70z"/>
+                <path class="opacity-03" d="M114 15h66v32h-66z"/>
+                <path class="st0c" d="M180 15v32h-66V15h66m2-2h-70v36h70V13z"/>
+                <path class="st0d" d="M112 230h50v6h-50zM112 220h70v6h-70z"/>
+                <path class="opacity-03" d="M114 178h66v32h-66z"/>
+                <path class="st0f" d="M180 178v32h-66v-32h66m2-2h-70v36h70v-36z"/>
+                <path class="opacity-03" d="M4 4h96v250H4z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="template-preview">
+        <div>
+          <h4>03</h4>
+          <svg class="arrow" width="246" height="13" viewBox="56 47 246 13" xmlns="http://www.w3.org/2000/svg">
+            <path d="M56 52h240v2H56v-2zm240-5l6 6-6 6V47z"/>
+          </svg>
+          <h2>The Grid</h2>
+          <p>Layout like it's 1999, using 2017 tech - CSS Grid.</p>
+          <a class="downloadbutton" href="#">Download</a>
+          <a class="downloadbutton" href="../github/boilercodes/templates/003/index.html">Preview</a>
+        </div>
+        <div>
+          <div class="theme-preview-image">
+            <a href="../github/boilercodes/templates/003/index.html">
+              <svg class="template-preview-svg" xmlns="http://www.w3.org/2000/svg" width="196" height="258" viewBox="0 0 196 258">
+                <path d="M196 258H0V0h196v258zM4 254h188V4H4v250z"/>
+                <path d="M88 121h70v6H88zM88 131h50v6H88zM88 111h70v6H88zM88 101h70v6H88zM88 171h70v6H88zM88 181h50v6H88zM88 151h70v6H88zM88 161h70v6H88z"/>
+                <path class="opacity-03" d="M90 59h66v32H90z"/>
+                <path d="M158 93H88V57h70v36zm-68-2h66V59H90v32z"/>
+                <path d="M14 57h50v12H14zM14 71h50v12H14zM14 85h50v12H14zM14 99h50v12H14z"/>
+                <path class="opacity-03" d="M192 44V4H4v40h70v170H4v40h188v-40H76V44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <p class="white">Want to learn more? Check out Rachel Andrew's <a class="green" href="https://gridbyexample.com/examples/">gridbyexample.com</a> for great content on the CSS grid.<br>
+      Or all these fantastic pointers by <a class="green" href="http://jensimmons.com/post/feb-27-2017/learn-css-grid">Jen Simmons.</p>
+
+    </main>
+  </div>
+
+<!-- Scripts -->
+<script src="build/jquery.plugins.min.js"></script>
+<script src="build/scripts.min.js"></script>
+
+</body>
 
 </html>
